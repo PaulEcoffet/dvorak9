@@ -15,9 +15,8 @@ Let's suppose that there is only one swap that improve the keyboard. There is
 25\*25 possible swaps. If we want that this swap has a probability of at least
 0.95 to be made once, then we have to compute 1,871 swaps.
 Indeed, we want, X being the good swap :
-
+<pre>
 P(X > 0) > 0.95
-
 X ~ B(n, 1/625), thus
 1 - P(X = 0) ≥ 0.95
 P(X = 0) ≤ 0.05
@@ -25,3 +24,4 @@ P(X = 0) ≤ 0.05
 n ln(624/625) ≤ ln 0.05
 n ≥ (ln 0.05)/ln(624/625)
 n ≥ 1870.9
+</pre>
